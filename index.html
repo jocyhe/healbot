@@ -2,16 +2,17 @@
 <html>
     <head>
         <title>healbot</title>
+        <link rel="icon" type="image/x-icon" href="http://vignette2.wikia.nocookie.net/disney/images/0/05/Baymax_Render.png/revision/latest?cb=20140719160257">
         <link href="styles.css" rel="stylesheet">
         <script src="main.js"></script>
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
     <body>
-        <body background="http://media.tumblr.com/64a88a6fd3da7f67a5282c0cfa893653/tumblr_inline_mjib9fyoK51qz4rgp.png">
         <div id="oldtext">
         </div>
         <div> 
-            <input type="text" id="reply"/>
-            <button onclick="send()">Send</button>
+            <input type="text" id="reply" onkeypress="handleKeyPress(event)">
+            <button id="button" onclick="send()">Send</button>
         </div>
     </body>
 </html>
